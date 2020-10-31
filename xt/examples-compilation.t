@@ -9,9 +9,9 @@
 
 use Test;
 use File::Temp;
+use Pod::Utilities;
 
 use lib $*PROGRAM.parent(2).child('lib');
-use Pod::Convenience;
 use Test-Files;
 
 =begin SYNOPSIS

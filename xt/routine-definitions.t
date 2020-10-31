@@ -1,9 +1,9 @@
 #!/usr/bin/env raku
 
 use Test;
+use Pod::Utilities;
 
 use lib $*PROGRAM.parent(2).child('lib');
-use Pod::Convenience;
 use Test-Files;
 
 =begin overview
