@@ -16,6 +16,6 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Run tests
-        run: ./util/github-action-test.sh t
+        run: ./util/github-action-test.sh -v t
         env:
           TEST_IMAGE: docker.io/jjmerelo/perl6-doccer:latest
