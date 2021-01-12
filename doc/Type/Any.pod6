@@ -16,6 +16,8 @@ List or a list-like type.
 
 =head1 Methods
 
+dummy
+
 =head2 method ACCEPTS
 
 Defined as:
