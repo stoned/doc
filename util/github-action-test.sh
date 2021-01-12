@@ -9,6 +9,8 @@ set -o pipefail
 # ./util/github-action-test.sh
 : ${GITHUB_WORKSPACE:=${PWD}}
 
+printenv | sort
+
 # if no argument is given run tests from t/
 if [[ $# -eq 0 ]]; then
   set -- t
