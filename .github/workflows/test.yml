@@ -14,8 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Debug
+        run: jq . $GITHUB_EVENT_PATH
 
-      - name: Run tests
-        run: ./util/github-action-test.sh -v t
-        env:
-          TEST_IMAGE: docker.io/jjmerelo/perl6-doccer:latest
+#     - name: Run tests
+#       run: ./util/github-action-test.sh -v t
+#       env:
+#         TEST_IMAGE: docker.io/jjmerelo/perl6-doccer:latest
